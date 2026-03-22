@@ -110,6 +110,35 @@ export const education = [
 
 export const projects = [
   {
+    title: "DigitKom Landing Page",
+    description:
+      "A comprehensive corporate website and landing page for DigitKom agency. Includes dedicated service pages, portfolio showcase, career opportunities, and a contact form.",
+    tech: [
+      "Next.js",
+      "TypeScript",
+      "Tailwind CSS",
+      "Nodemailer",
+      "Framer Motion",
+    ],
+    images: [
+      "/images/projects/digitikomLandingPage/Screenshot 2026-02-25 at 21-22-47 DigitKom.png",
+      "/images/projects/digitikomLandingPage/Screenshot 2026-02-25 at 21-23-03 DigitKom.png",
+      "/images/projects/digitikomLandingPage/Screenshot 2026-02-25 at 21-23-12 DigitKom.png",
+      "/images/projects/digitikomLandingPage/Screenshot 2026-02-25 at 21-23-23 DigitKom.png",
+      "/images/projects/digitikomLandingPage/Screenshot 2026-02-25 at 21-23-36 DigitKom.png",
+      "/images/projects/digitikomLandingPage/Screenshot 2026-02-25 at 21-23-52 DigitKom.png",
+    ],
+    features: [
+      "Home page with engaging hero section and overview",
+      "About Us page detailing company mission and values",
+      "Portfolio page showcasing past work and case studies",
+      "Dedicated page for each provided service",
+      "Career page for job listings and applications",
+      "Contact page featuring a working form using Nodemailer",
+      "Responsive and modern design for all devices",
+    ],
+  },
+  {
     title: "OnlyPizza",
     description:
       "OnlyPizza digital menu uses Drizzle with Next.js.",
@@ -199,7 +228,6 @@ export const projects = [
     description:
       "Full-stack application to optimize manufacturing workflows with order tracking, workshop assignment, and material consumption monitoring.",
     tech: ["Next.js", "PostgreSQL", "Tailwind CSS"],
-    repo: "https://github.com/nazimdjebloun/production-system",
     images: [
       "/images/projects/productionapp/dossier.png",
       "/images/projects/productionapp/create-dossier.png",
@@ -230,7 +258,6 @@ export const projects = [
       "React Hook Form + Zod",
       "next-themes",
     ],
-    repo: "https://github.com/nazimdjebloun/digitkom",
     images: [
       "/images/projects/digitkomAdmin/Screenshot 2026-02-25 at 21-28-19 DigitKom.png",
       "/images/projects/digitkomAdmin/Screenshot 2026-02-25 at 21-28-26 DigitKom.png",
