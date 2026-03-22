@@ -1,6 +1,6 @@
 import { ThemeToggle } from "@/components/theme-toggle";
 import { Button } from "@/components/ui/button";
-import { Github, Linkedin, Mail } from "lucide-react";
+import { Github, Linkedin, Mail, Download } from "lucide-react";
 import { profile } from "@/lib/data";
 
 export function Header() {
@@ -16,7 +16,12 @@ export function Header() {
         <p className="text-base font-medium text-muted-foreground sm:text-lg md:text-xl lg:text-2xl">
           {profile.role}
         </p>
-        <div className="flex gap-2 sm:gap-3">
+        <div className="flex flex-wrap gap-2 sm:gap-3">
+          <Button variant="outline" size="sm" asChild>
+            <a href="/nazim_djeblounCV-ENG.pdf" target="_blank" className="flex items-center gap-2">
+              <Download className="h-4 w-4" /> Resume
+            </a>
+          </Button>
           <Button variant="outline" size="icon" asChild className="md:hidden">
             <a href={profile.github} target="_blank" rel="noopener noreferrer">
               <Github className="h-4 w-4" />
