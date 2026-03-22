@@ -193,7 +193,13 @@ export const projects = [
       "Personal finance app with real-time sync, authentication, expense/income categorization, and spending analytics with charts.",
     tech: ["Next.js", "Convex", "Clerk", "TypeScript", "Recharts"],
     repo: "https://github.com/nazimdjebloun/expense-tracker",
-    images: [],
+    images: [
+      "/images/projects/expenses-tracker/Screenshot 2026-03-23 at 00-18-26 Lumina Smart Expense Tracking.png",
+      "/images/projects/expenses-tracker/Screenshot 2026-03-23 at 00-18-38 Lumina Smart Expense Tracking.png",
+      "/images/projects/expenses-tracker/Screenshot 2026-03-23 at 00-18-47 Lumina Smart Expense Tracking.png",
+      "/images/projects/expenses-tracker/Screenshot 2026-03-23 at 00-18-56 Lumina Smart Expense Tracking.png",
+      "/images/projects/expenses-tracker/Screenshot 2026-03-23 at 00-19-04 Lumina Smart Expense Tracking.png",
+    ],
     features: [
       "Authentication with Clerk (sign-up, sign-in, session management)",
       "Real-time data sync powered by Convex",
