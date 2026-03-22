@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630">
+  <!-- Zinc background -->
+  <rect width="1200" height="630" fill="#18181b" />
+  
+  <!-- Subtle darker pattern -->
+  <rect width="1200" height="630" fill="#27272a" opacity="0.5" />
+  
+  <!-- Centered content container -->
+  <g transform="translate(600, 315)">
+    <!-- Code brackets with simple, clean style -->
+    <g fill="none" stroke="#ffffff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+      <!-- Left bracket < -->
+      <path d="M -250 -50 L -300 0 L -250 50" />
+      
+      <!-- Right bracket > -->
+      <path d="M 250 -50 L 300 0 L 250 50" />
+    </g>
+    
+    <!-- Name with Apple-like typography -->
+    <text x="0" y="-20" font-family="SF Pro Display, -apple-system, BlinkMacSystemFont, Helvetica, Arial, sans-serif" font-size="48" font-weight="600" fill="#ffffff" text-anchor="middle">Nazim Djebloun</text>
+    
+    <!-- Simple thin divider -->
+    <rect x="-100" y="15" width="200" height="0.5" fill="#a1a1aa" />
+    
+    <!-- Role with lighter weight -->
+    <text x="0" y="60" font-family="SF Pro Display, -apple-system, BlinkMacSystemFont, Helvetica, Arial, sans-serif" font-size="24" font-weight="400" fill="#d4d4d8" text-anchor="middle">Full Stack Software Developer</text>
+  </g>
+  
+  <!-- Website URL in bottom right, Apple-style -->
+  <text x="1150" y="590" font-family="SF Pro Text, -apple-system, BlinkMacSystemFont, Helvetica, Arial, sans-serif" font-size="14" font-weight="400" fill="#71717a" text-anchor="end">nazimdjebloun.com</text>
+</svg>
