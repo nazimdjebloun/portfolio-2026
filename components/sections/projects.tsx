@@ -32,9 +32,11 @@ export function Projects({ onProjectClick }: ProjectsProps) {
                   {project.title}
                 </CardTitle>
                 <Button variant="ghost" size="icon" asChild className="opacity-0 group-hover:opacity-100 transition-opacity" onClick={(e) => e.stopPropagation()}>
-                  <a href={project.repo || project.link} target="_blank" rel="noopener noreferrer">
-                    <ExternalLink className="h-4 w-4" />
-                  </a>
+                  {project.repo && (
+                    <a href={project.repo} target="_blank" rel="noopener noreferrer">
+                      <ExternalLink className="h-4 w-4" />
+                    </a>
+                  )}
                 </Button>
               </div>
               <CardDescription className="text-sm">

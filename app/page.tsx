@@ -1,8 +1,8 @@
 "use client"
 
 import { useState } from "react"
+import dynamic from "next/dynamic"
 import { Project } from "@/lib/data"
-import { ProjectDialog } from "@/components/project-dialog"
 import { Separator } from "@/components/ui/separator"
 import {
   Header,
@@ -12,6 +12,12 @@ import {
   ExperienceEducation,
   Footer,
 } from "@/components/sections"
+
+const ProjectDialog = dynamic(() =>
+  import("@/components/project-dialog").then((mod) => mod.ProjectDialog), {
+  loading: () => null,
+  ssr: false,
+})
 
 export default function Home() {
   const [selectedProject, setSelectedProject] = useState<Project | null>(null)
