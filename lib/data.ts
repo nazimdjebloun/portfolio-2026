@@ -12,7 +12,7 @@ export const profile = {
   name: "Nazim Djebloun",
   role: "Full Stack Software Developer",
   description:
-    "Full-stack developer based in Algeria, building production-grade web applications with React, Next.js, and Node.js. I've shipped CRM systems, digital menus, e-commerce platforms, and internal tooling — end-to-end. I care about clean architecture, real usability, and getting things actually deployed.",
+    "Full-stack developer based in Algeria, building production-grade web applications with React, Next.js, and Node.js. I've shipped CRM systems, digital menus, e-commerce platforms, and internal tooling — end-to-end. I care about clean architecture, real usability.",
   github: "https://github.com/nazimdjebloun",
   linkedin: "https://linkedin.com/in/nazim-djebloun",
   email: "nazimdjebloun@example.com",
@@ -110,16 +110,16 @@ export const education = [
 
 export const projects = [
   {
-    title: "DigitKom Admin",
+    title: "OnlyPizza",
     description:
-      "Comprehensive CRM and Agency Management System for a digital marketing agency. Handles full client lifecycle from prospect tracking to service delivery and payment management.",
+      "OnlyPizza digital menu uses Drizzle with Next.js.",
     tech: [
       "Next.js 16 (App Router)",
       "TypeScript",
       "Tailwind CSS",
       "shadcn/ui + Radix UI",
-      "Clerk Authentication",
-      "Convex (Real-time Backend)",
+      "Better Auth",
+      "Drizzle ORM",
       "React Hook Form + Zod",
       "next-themes",
     ],
