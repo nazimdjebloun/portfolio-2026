@@ -1,10 +1,9 @@
 "use client";
 
-import Image from "next/image";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { ScrollArea } from "@/components/ui/scroll-area";
-import { ExternalLink, Github, CheckCircle2, ImageIcon } from "lucide-react";
+import { ExternalLink, Github, CheckCircle2 } from "lucide-react";
 import {
   Dialog,
   DialogContent,
@@ -12,13 +11,7 @@ import {
   DialogTitle,
   DialogDescription,
 } from "@/components/ui/dialog";
-import {
-  Carousel,
-  CarouselContent,
-  CarouselItem,
-  CarouselNext,
-  CarouselPrevious,
-} from "@/components/ui/carousel";
+import { ImageViewer } from "@/components/image-viewer";
 
 interface Project {
   title: string;
@@ -51,41 +44,15 @@ export function ProjectDialog({ project, open, onOpenChange }: ProjectDialogProp
           </DialogDescription>
         </DialogHeader>
 
-        {/* Carousel */}
+        {/* Image Carousel with click to view fullscreen */}
         <div className="px-4 pb-3 shrink-0">
-          <div className="rounded-lg overflow-hidden border">
-            <Carousel className="w-full" opts={{ loop: hasImages }}>
-              <CarouselContent>
-                {hasImages ? (
-                  project.images.map((image, index) => (
-                    <CarouselItem key={index}>
-                      <div className="relative h-[180px] md:h-[220px] w-full bg-muted">
-                        <Image
-                          src={image}
-                          alt={`${project.title} screenshot ${index + 1}`}
-                          fill
-                          sizes="(max-width: 768px) 100vw, 800px"
-                          className="object-cover"
-                        />
-                      </div>
-                    </CarouselItem>
-                  ))
-                ) : (
-                  <CarouselItem>
-                    <div className="relative h-[180px] md:h-[220px] w-full bg-muted flex items-center justify-center">
-                      <ImageIcon className="h-12 w-12 text-muted-foreground/50" />
-                    </div>
-                  </CarouselItem>
-                )}
-              </CarouselContent>
-              {hasImages && project.images.length > 1 && (
-                <>
-                  <CarouselPrevious className="left-2 h-8 w-8 bg-background/90 hover:bg-background transition-none" />
-                  <CarouselNext className="right-2 h-8 w-8 bg-background/90 hover:bg-background transition-none" />
-                </>
-              )}
-            </Carousel>
-          </div>
+          {hasImages ? (
+            <ImageViewer images={project.images} title={project.title} />
+          ) : (
+            <div className="rounded-lg border bg-muted h-[180px] md:h-[220px] flex items-center justify-center">
+              <span className="text-muted-foreground text-sm">No images available</span>
+            </div>
+          )}
         </div>
 
         {/* Scrollable Content */}
