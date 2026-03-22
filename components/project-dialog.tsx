@@ -59,7 +59,7 @@ export function ProjectDialog({ project, open, onOpenChange }: ProjectDialogProp
                 {hasImages ? (
                   project.images.map((image, index) => (
                     <CarouselItem key={index}>
-                      <div className="relative h-[200px] md:h-[250px] w-full bg-muted">
+                      <div className="relative h-[180px] md:h-[220px] w-full bg-muted">
                         <Image
                           src={image}
                           alt={`${project.title} screenshot ${index + 1}`}
@@ -72,7 +72,7 @@ export function ProjectDialog({ project, open, onOpenChange }: ProjectDialogProp
                   ))
                 ) : (
                   <CarouselItem>
-                    <div className="relative h-[200px] md:h-[250px] w-full bg-muted flex items-center justify-center">
+                    <div className="relative h-[180px] md:h-[220px] w-full bg-muted flex items-center justify-center">
                       <ImageIcon className="h-12 w-12 text-muted-foreground/50" />
                     </div>
                   </CarouselItem>
@@ -89,7 +89,7 @@ export function ProjectDialog({ project, open, onOpenChange }: ProjectDialogProp
         </div>
 
         {/* Scrollable Content */}
-        <ScrollArea className="h-50 px-4">
+        <ScrollArea className="h-[300px] px-4">
           <div className="space-y-4 pr-6 pb-4">
             {/* Tech Stack */}
             <div>

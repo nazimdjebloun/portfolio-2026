@@ -11,12 +11,12 @@ export interface Project {
 export const profile = {
   name: "Nazim Djebloun",
   role: "Full Stack Software Developer",
-  description: "I'm a full-stack software developer passionate about turning ideas into engaging digital experiences. I believe in crafting applications that are not just functional but also intuitive and visually captivating. With a focus on creativity, analytical thinking and a relentless pursuit of excellence, I approach every project with enthusiasm and dedication.",
+  description:
+    "Full-stack developer based in Algeria, building production-grade web applications with React, Next.js, and Node.js. I've shipped CRM systems, digital menus, e-commerce platforms, and internal tooling — end-to-end. I care about clean architecture, real usability, and getting things actually deployed.",
   github: "https://github.com/nazimdjebloun",
   linkedin: "https://linkedin.com/in/nazim-djebloun",
   email: "nazimdjebloun@example.com",
-};
-
+}
 export const skills = [
   {
     category: "Frontend",
@@ -45,9 +45,9 @@ export const skills = [
   },
   {
     category: "Tools & Others",
-    items: ["Git", "GitHub", "VS Code", "Postman", "npm/pnpm", "Vercel"],
+    items: ["Git", "Convex", "Clerk", "Vercel"],
   },
-];
+]
 
 export const experience = [
   {
@@ -67,13 +67,13 @@ export const experience = [
     company: "Self-Employed",
     period: "2024 – Present",
     description:
-      "Focusing on building scalable and robust Full stack web apps.",
-    achievements: ["In the process of building an Ecommerce store"],
+      "Independent full-stack development work alongside employment, focusing on scalable web applications.",
+    achievements: [],
   },
   {
     role: "TS Internship",
     company: "ANEP",
-    period: "Sep 2024 – Apr 2024",
+    period: "Sep 2023 – Apr 2024",
     description:
       "Designed and developed a full-stack production management application to optimize manufacturing workflows and resource allocation.",
     achievements: [
@@ -82,7 +82,7 @@ export const experience = [
       "Developed order tracking system with real-time status updates.",
     ],
   },
-];
+]
 
 export const education = [
   {
@@ -110,27 +110,76 @@ export const education = [
 
 export const projects = [
   {
-    title: "E-commerce Platform",
-    description: "Full-stack e-commerce application with admin panel and real-time inventory management.",
-    tech: ["Next.js", "Node.js", "PostgreSQL", "TypeScript"],
-    repo: "https://github.com/nazimdjebloun/shladty",
+    title: "DigitKom Admin",
+    description:
+      "Comprehensive CRM and Agency Management System for a digital marketing agency. Handles full client lifecycle from prospect tracking to service delivery and payment management.",
+    tech: [
+      "Next.js 16 (App Router)",
+      "TypeScript",
+      "Tailwind CSS",
+      "shadcn/ui + Radix UI",
+      "Clerk Authentication",
+      "Convex (Real-time Backend)",
+      "React Hook Form + Zod",
+      "next-themes",
+    ],
     images: [],
     features: [
-      "User authentication with JWT tokens",
+      "Landing page with smooth navigation",
+      "Admin panel with full control",
+      "User management with roles (Admin, Manager, User)",
+      "Multi-location management",
+      "Category and item management",
+      "Location-specific pricing for items",
+      "Item availability toggle per location",
+      "Best seller and Dish of the Day designation",
+      "Image upload for items and categories",
+      "User authentication with Better Auth",
+      "Forgot password and reset password",
+      "User profile management",
+      "About Us page",
+      "Location selection page",
+      "Menu page with dynamic location fetching (/location-slug)",
+      "Responsive design for all devices",
+    ],
+  },
+  {
+    title: "E-commerce Platform",
+    description:
+      "Full-stack e-commerce application with admin panel and real-time inventory management.",
+    tech: ["Next.js", "Node.js", "PostgreSQL", "TypeScript"],
+    images: [],
+    features: [
+      "User authentication with Clerk",
       "Product catalog with categories and search",
       "Shopping cart with real-time updates",
       "Admin dashboard for inventory management",
       "Order tracking and history",
-      "Review and rating system",
       "Mobile responsive design",
     ],
   },
   {
+    title: "Expense Tracker",
+    description:
+      "Personal finance app with real-time sync, authentication, expense/income categorization, and spending analytics with charts.",
+    tech: ["Next.js", "Convex", "Clerk", "TypeScript", "Recharts"],
+    repo: "https://github.com/nazimdjebloun/expense-tracker",
+    images: [],
+    features: [
+      "Authentication with Clerk (sign-up, sign-in, session management)",
+      "Real-time data sync powered by Convex",
+      "Expense and income tracking with categorization",
+      "Date filtering with calendar picker",
+      "Spending analytics and charts via Recharts",
+      "Form validation with React Hook Form and Zod",
+      "Dark/light mode support",
+    ],
+  },
+  {
     title: "Restaurant Digital Menu (Shladty)",
-    description: "Digital menu system for restaurants featuring a comprehensive admin panel for real-time menu management and updates.",
+    description:
+      "Digital menu system for restaurants featuring a comprehensive admin panel for real-time menu management and updates.",
     tech: ["Next.js", "Tailwind CSS", "REST APIs"],
-    repo: "https://github.com/nazimdjebloun/shladty",
-    link: "https://shladty.com",
     images: [
       "/images/projects/shladty/shladty-menu.png",
       "/images/projects/shladty/shladty-linktree.png",
@@ -143,13 +192,12 @@ export const projects = [
       "Specials and promotions display",
       "Allergen and dietary information",
       "Order management integration",
-      "Multi-language support",
-      "Analytics dashboard for popular items",
     ],
   },
   {
     title: "Production Management System (ANEP)",
-    description: "Full-stack application to optimize manufacturing workflows with order tracking, workshop assignment, and material consumption monitoring.",
+    description:
+      "Full-stack application to optimize manufacturing workflows with order tracking, workshop assignment, and material consumption monitoring.",
     tech: ["Next.js", "PostgreSQL", "Tailwind CSS"],
     repo: "https://github.com/nazimdjebloun/production-system",
     images: [
@@ -161,20 +209,27 @@ export const projects = [
       "/images/projects/productionapp/pv.png",
     ],
     features: [
-      "12+ relational PostgreSQL tables",
       "Order tracking with real-time status updates",
       "Workshop assignment and scheduling",
       "Material consumption tracking",
       "Production workflow management",
       "Automated status reporting",
-      "Dashboard with analytics",
-      "Role-based access control",
     ],
   },
   {
-    title: "CRM & ERP System (Digitkom)",
-    description: "Internal business management system to streamline operations including inventory, orders, and employee management.",
-    tech: ["React", "Node.js", "PostgreSQL"],
+    title: "DigitKom Admin",
+    description:
+      "Comprehensive CRM and Agency Management System for a digital marketing agency. Handles full client lifecycle from prospect tracking to service delivery and payment management.",
+    tech: [
+      "Next.js 16 (App Router)",
+      "TypeScript",
+      "Tailwind CSS",
+      "shadcn/ui + Radix UI",
+      "Clerk Authentication",
+      "Convex (Real-time Backend)",
+      "React Hook Form + Zod",
+      "next-themes",
+    ],
     repo: "https://github.com/nazimdjebloun/digitkom",
     images: [
       "/images/projects/digitkomAdmin/Screenshot 2026-02-25 at 21-28-19 DigitKom.png",
@@ -187,14 +242,47 @@ export const projects = [
       "/images/projects/digitkomAdmin/Screenshot 2026-02-25 at 21-27-58 DigitKom.png",
     ],
     features: [
-      "Customer relationship management",
-      "Inventory tracking and control",
-      "Order processing automation",
-      "Employee management module",
-      "Financial reporting and analytics",
-      "Document management system",
-      "Email notification system",
-      "Customizable dashboards",
+      "Full CRM with prospect-to-client conversion pipeline",
+      "Multi-service management (SMM, Web Dev, Video Editing, Graphic Design)",
+      "Payment tracking with multiple payment methods",
+      "Role-based access control (Admin, Sales, SMM, Designers, etc.)",
+      "Content production workflow with approval stages",
+      "Meeting scheduling and interaction logging",
+      "Contract renewal and service status tracking",
+      "Role-specific dashboards (Admin, Sales, Designer, SMM workspaces)",
+      "Real-time database updates with Convex",
+      "Dark/Light theme support",
+      "French-localized user interface",
+      "Toast notifications with Sonner",
+      "Feature-based modular architecture",
     ],
   },
-];
+  {
+    title: "DevSpace",
+    description:
+      "A developer community platform for posting tech articles, news, and insights. Built for developers to share and discover content.",
+    tech: [
+      "Next.js 16 (App Router)",
+      "TypeScript",
+      "Tailwind CSS",
+      "shadcn/ui + Radix UI",
+      "Clerk Authentication",
+      "Convex (Real-time Backend)",
+      "React Hook Form + Zod",
+    ],
+    images: [],
+    features: [
+      "User authentication with Clerk",
+      "Real-time article and post creation",
+      "Tech news and article feed",
+      "Comment system for discussions",
+      "Like and bookmark functionality",
+      "User profiles with post history",
+      "Category-based content filtering",
+      "Dark/Light theme support",
+    ],
+  },
+]
+
+
+        
