@@ -19,6 +19,7 @@ export function Projects({ onProjectClick }: ProjectsProps) {
           Projects
         </h2>
       </div>
+      <p className="text-sm text-muted-foreground">Click on a project card to view details</p>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
         {projects.map((project, index) => (
           <Card
