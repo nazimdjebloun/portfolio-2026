@@ -1,11 +1,11 @@
 export interface Project {
-  title: string;
-  description: string;
-  tech: string[];
-  link?: string;
-  repo?: string;
-  images: string[];
-  features: string[];
+  title: string
+  description: string
+  tech: string[]
+  link?: string
+  repo?: string
+  images: string[]
+  features: string[]
 }
 
 export const profile = {
@@ -90,14 +90,16 @@ export const education = [
     institution: "Ibn Rochde",
     location: "Algiers, Algeria",
     period: "Sep 2022 - Apr 2024",
-    description: "Completed a comprehensive Computer Science program with a focus on Databases design, implementation, administration and management.",
+    description:
+      "Completed a comprehensive Computer Science program with a focus on Databases design, implementation, administration and management.",
   },
   {
     degree: "Master's degree in Service Marketing",
     institution: "University of Algiers 3",
     location: "Algiers, Algeria",
     period: "Sep 2022 - Jul 2024",
-    description: "Strategic Service marketing and digital Service marketing techniques.",
+    description:
+      "Strategic Service marketing and digital Service marketing techniques.",
   },
   {
     degree: "Bachelor's degree in Marketing",
@@ -106,7 +108,7 @@ export const education = [
     period: "Sep 2019 - Jul 2022",
     description: "Focus on core Marketing principles.",
   },
-];
+]
 
 export const projects = [
   {
@@ -140,8 +142,7 @@ export const projects = [
   },
   {
     title: "OnlyPizza",
-    description:
-      "OnlyPizza digital menu uses Drizzle with Next.js.",
+    description: "OnlyPizza digital menu uses Drizzle with Next.js.",
     tech: [
       "Next.js 16 (App Router)",
       "TypeScript",
@@ -189,7 +190,19 @@ export const projects = [
     description:
       "Full-stack e-commerce application with admin panel and real-time inventory management.",
     tech: ["Next.js", "Node.js", "PostgreSQL", "TypeScript"],
-    images: [],
+    images: [
+      "/images/projects/soluker-project/soluker-319321.png",
+      "/images/projects/soluker-project/soluker-694073.png",
+      "/images/projects/soluker-project/soluker-354775.png",
+      "/images/projects/soluker-project/soluker-999026.png",
+      "/images/projects/soluker-project/soluker-282001.png",
+      "/images/projects/soluker-project/soluker-108743.png",
+      "/images/projects/soluker-project/soluker-553195.png",
+      "/images/projects/soluker-project/soluker-873534.png",
+      "/images/projects/soluker-project/soluker-876352.png",
+      "/images/projects/soluker-project/soluker-719377.png",
+      "/images/projects/soluker-project/soluker-409208.png",
+    ],
     features: [
       "User authentication with Clerk",
       "Product catalog with categories and search",
@@ -328,6 +341,3 @@ export const projects = [
     ],
   },
 ]
-
-
-        
